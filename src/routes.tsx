@@ -1,10 +1,12 @@
 import type { RouteObject } from 'react-router-dom';
-import { Outlet, Route } from 'react-router-dom'; // ✅ 必须添加
+// import { Outlet } from 'react-router-dom'; // 子元素占位符 如果已配置就不需要加
 
 import Home from './pages/Home';
 import About from './pages/About';
 
 // 基础 Hooks 练习
+import UseStateDemo from './pages/basics/UseStateDemo';
+import UseEffectDemo from './pages/basics/useEffectDemo';
 import UseRefDemo from './pages/basics/UseRefDemo';
 import UseReducerDemo from './pages/basics/UseReducerDemo';
 
@@ -22,12 +24,15 @@ const routes: RouteObject[] = [
     element: (
       <div>
         <BasicsLayout title="基础 Hooks 练习" />
-        <Outlet />
+        {/* <Outlet /> */}
       </div>
     ),
     children: [
-      { path: 'useref', element: <UseRefDemo /> },
-      { path: 'usereducer', element: <UseReducerDemo /> },
+      { path: 'useState', element: <UseStateDemo /> },
+      { path: 'useEffect', element: <UseEffectDemo /> },
+
+      { path: 'useRef', element: <UseRefDemo /> },
+      { path: 'useReducer', element: <UseReducerDemo /> },
     ],
   },
   {
@@ -35,12 +40,12 @@ const routes: RouteObject[] = [
     element: (
       <div>
         <BasicsLayout title="功能模块练习" />
-        <Outlet />
+        {/* <Outlet /> */}
       </div>
     ),
     children: [
-      { path: 'draggable', element: <Draggable /> },
-      { path: 'todolist', element: <TodoList /> },
+      { path: 'dragGable', element: <Draggable /> },
+      { path: 'todoList', element: <TodoList /> },
     ],
   },
 ];
