@@ -1,5 +1,5 @@
 import type { RouteObject } from 'react-router-dom';
-import { Outlet } from 'react-router-dom'; // ✅ 必须添加
+import { Outlet, Route } from 'react-router-dom'; // ✅ 必须添加
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -12,6 +12,8 @@ import UseReducerDemo from './pages/basics/UseReducerDemo';
 import Draggable from './pages/features/Draggable';
 import TodoList from './pages/features/TodoList';
 
+import BasicsLayout from './pages/basics/BasicsLayout';
+
 const routes: RouteObject[] = [
   { path: '/', element: <Home />, index: true },
   { path: '/about', element: <About /> },
@@ -19,7 +21,7 @@ const routes: RouteObject[] = [
     path: '/basics',
     element: (
       <div>
-        <h2>基础Hooks练习</h2>
+        <BasicsLayout title="基础 Hooks 练习" />
         <Outlet />
       </div>
     ),
@@ -32,7 +34,7 @@ const routes: RouteObject[] = [
     path: '/features',
     element: (
       <div>
-        <h2>功能模块练习</h2>
+        <BasicsLayout title="功能模块练习" />
         <Outlet />
       </div>
     ),
