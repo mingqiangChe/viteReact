@@ -7,9 +7,10 @@ import About from './pages/About';
 // 基础 Hooks 练习
 import UseStateDemo from './pages/basics/UseStateDemo';
 import UseEffectDemo from './pages/basics/useEffectDemo';
-import UseContextDemo from './pages/basics/UseContext';
+import UseContextDemo from './pages/basics/UseContextDemo';
 import UseRefDemo from './pages/basics/UseRefDemo';
 import UseReducerDemo from './pages/basics/UseReducerDemo';
+import UseMemoDemo from './pages/basics/useMemoDemo';
 
 // 功能模块练习
 import Draggable from './pages/features/Draggable';
@@ -34,6 +35,7 @@ const routes: RouteObject[] = [
       { path: 'useContext', element: <UseContextDemo /> },
       { path: 'useRef', element: <UseRefDemo /> },
       { path: 'useReducer', element: <UseReducerDemo /> },
+      { path: 'useMemo', element: <UseMemoDemo /> },
     ],
   },
   {

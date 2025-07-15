@@ -22,6 +22,9 @@ export default function Home() {
         <li>
           <Link to="/basics/useReducer">useReducer 示例</Link>
         </li>
+        <li>
+          <Link to="/basics/useMemo">useMemo 示例</Link>
+        </li>
       </ul>
 
       <h2>功能模块练习</h2>
