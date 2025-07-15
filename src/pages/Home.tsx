@@ -17,6 +17,9 @@ export default function Home() {
           <Link to="/basics/useRef">useRef 示例</Link>
         </li>
         <li>
+          <Link to="/basics/useContext">useContext 示例</Link>
+        </li>
+        <li>
           <Link to="/basics/useReducer">useReducer 示例</Link>
         </li>
       </ul>

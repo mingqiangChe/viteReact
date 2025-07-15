@@ -7,6 +7,7 @@ import About from './pages/About';
 // 基础 Hooks 练习
 import UseStateDemo from './pages/basics/UseStateDemo';
 import UseEffectDemo from './pages/basics/useEffectDemo';
+import UseContextDemo from './pages/basics/UseContext';
 import UseRefDemo from './pages/basics/UseRefDemo';
 import UseReducerDemo from './pages/basics/UseReducerDemo';
 
@@ -30,7 +31,7 @@ const routes: RouteObject[] = [
     children: [
       { path: 'useState', element: <UseStateDemo /> },
       { path: 'useEffect', element: <UseEffectDemo /> },
-
+      { path: 'useContext', element: <UseContextDemo /> },
       { path: 'useRef', element: <UseRefDemo /> },
       { path: 'useReducer', element: <UseReducerDemo /> },
     ],
