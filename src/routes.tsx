@@ -11,6 +11,7 @@ import UseContextDemo from './pages/basics/UseContextDemo';
 import UseRefDemo from './pages/basics/UseRefDemo';
 import UseReducerDemo from './pages/basics/UseReducerDemo';
 import UseMemoDemo from './pages/basics/useMemoDemo';
+import UseCallbackDemo from './pages/basics/UseCallbackDemo';
 
 // 功能模块练习
 import Draggable from './pages/features/Draggable';
@@ -36,6 +37,7 @@ const routes: RouteObject[] = [
       { path: 'useRef', element: <UseRefDemo /> },
       { path: 'useReducer', element: <UseReducerDemo /> },
       { path: 'useMemo', element: <UseMemoDemo /> },
+      { path: 'useCallback', element: <UseCallbackDemo /> },
     ],
   },
   {
