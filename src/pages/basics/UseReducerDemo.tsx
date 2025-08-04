@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import { useReducer } from 'react';
 import CodeBlock from '@/components/CodeBlock';
 const code = `import React, { useReducer } from 'react';
 

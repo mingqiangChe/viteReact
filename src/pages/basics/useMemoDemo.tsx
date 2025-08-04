@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import CodeBlock from '@/components/CodeBlock';
 const code = `import React, { useState, useMemo } from 'react';
 

@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import CodeBlock from '@/components/CodeBlock';
 
 const code = `import React, { useRef, useState, useEffect } from 'react';

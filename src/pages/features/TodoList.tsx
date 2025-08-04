@@ -1,5 +1,5 @@
 // 引入 React 相关钩子函数
-import React, { useReducer, useState, useEffect } from 'react';
+import { useReducer, useState, useEffect } from 'react';
 import CodeBlock from '@/components/CodeBlock';
 const code = `
 // 引入 React 相关钩子函数
