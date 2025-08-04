@@ -27,3 +27,7 @@ pnpm add react-router-dom
 #### 拖拽
 
 #### todolist
+
+## 申请证书
+
+sudo certbot certonly --nginx -d react.checheblog.com --deploy-hook "/usr/local/bin/certbot-renew-hook.sh" --agree-tos --non-interactive -m thomaschefowshu@gmail.com
